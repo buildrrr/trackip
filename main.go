@@ -103,7 +103,7 @@ func myip(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	http.HandleFunc("/myip", myip)
+	http.HandleFunc("/", myip)
 	http.ListenAndServe(":8080", nil)
 
 }
